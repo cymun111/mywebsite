@@ -1,0 +1,118 @@
+@base-font-size: 1.2em;
+* {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* NavBar */
+.navbar {width: 100%;
+         overflow: hidden;
+         background-color: Darkred;
+  }
+ul {list-style-type: none;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1% 1%;
+    text-decoration: none;
+    font-size: @base-font-size;
+}
+#home_page, #portfolio_page { background-color: silver;
+}
+#contact_page { background-image: url("http://cdn.wallpapersafari.com/65/14/VRo6I4.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+}
+
+a:hover { color: red;}
+a:active { color: DarkRed;}
+
+img { border-radius: 25%;
+      margin-top: 2%;
+      border: 5px groove Red;
+      width: 100%;
+}
+.text {text-align: center;
+       font-family: Bad Script;
+       font-size: @base-font-size;
+}
+
+label {font-family: Bad Script;
+    font-size: @base-font-size + 1em;
+    color: black;
+}
+.form {float: right;
+
+}
+#Button {width: 10%;
+         height: 3%;
+
+}
+#output {font-size: 1em;
+         font-family: courier;
+}
+#footer {
+          font-family: Bad Script;
+          color: green;
+          font-size: @base-font-size;
+          position: absolute;
+          bottom: 0;
+}
+footer {
+          font-family: Bad Script;
+          color: green;
+          font-size: @base-font-size;
+          position: static;
+          bottom: 0;
+}
+
+
+/* Grid Code */
+
+ .grid-container{
+         width: 100%;
+         height: 100%;
+}
+
+/*-- our cleafix hack -- */
+.row:before,
+.row:after {
+   content:"";
+     display: table ;
+   clear:both;
+}
+
+[class*='col-'] {
+   float: left;
+   min-height: .5px;
+   width: 8.33%;
+   /*-- our gutter -- */
+}
+
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%;    }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%;    }
+.col-7{ width: 58.33%; }
+.col-8{ width: 66.66%; }
+.col-9{ width: 74.99%; }
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.67%;}
+.col-12{ width: 100%;  }
+
+/*-- some extra column content styling --*/
+[class*='col-'] > p {
+ background-color: light grey;
+}

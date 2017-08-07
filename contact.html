@@ -1,48 +1,78 @@
 <!DOCTYPE html>
  <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
-   <title>Kenyon Westbrook|Contact Me</title>
-  </head>
-  <body id="contact_page">
-  <div class="header">
-   <header>
-     <nav>
-       <a href="index.html">Home</a>
-       <a href="portfolio.html">Portfolio</a>
-       <a href="contact.html">Contact</a>
-     </nav>
-   </header>
+ <head>
+   <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+   <link href="style.less" type="text/css" rel="stylesheet/less">
+  <title>Kenyon Westbrook|Contact</title>
+ </head>
+ <body id="home_page">
+   <div class="grid-container">
+  <header>
+    <div class="row">
+    <div class="col-12">
+      <nav>
+          <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+      </nav>
    </div>
-   <h1 id="contact">Contact Me</h1>
-   <a id="email" href="mailto:kenyon.westbrook@gmail.com">kenyon.westbrook@gmail.com</a>
-    <div class="table"> 
-    <table> 
-       <tr>
-         <td><a href="https://www.facebook.com/kenyon.westbrook">Facebook</a></td>
-         <td><a href="https://github.com/cymun111">GitHub</a></td>
-         <td><a href="https://plus.google.com/u/0/111628736488688118379">Google+</a></td>
-       <tr>
-      </table>
-      </div>
-    <div class="form">
+  </div>
+  </header>
+   </div>
+   <div class="row text">
+     <div class="col-5">
+     </div>
+    <div class="col-2">
+   <h1>Contact Me</h1>
+ </div>
+ <div class="col-5">
+ </div>
+ </div>
+ <div class="row text">
+   <div class="col-4">
+   </div>
+   <div class="col-4">
+   <a href="mailto:kenyon.westbrook@gmail.com">kenyon.westbrook@gmail.com</a>
+ </div>
+ <div class="col-4">
+ </div>
+ </div>
+ <div class="row">
+    <div class="col-5">
+    </div>
+      <div class="col-2">
     <form action="https://formspree.io/kenyon.westbrook@gmail.com"
       method="POST">
     <div class="label">
-     <label class="1" for="name">Name</label>
+     <label for="name">Name</label>
      <input class="form1" type="text" name="Name" placeholder="Name">
      </div>
      <div>
-     <label class="1" for="email">Email</label>
+     <label for="email">Email</label>
      <input class="form1" type="email" name="Reply To" placeholder="Email">
     </div>
     <div class="label">
-     <label class="1" for="Message">Message</label>
-     <textarea class="form1" row="1000" cols="40" name="Message" placeholder="Message"></textarea>
+     <label for="Message">Message</label>
+     <textarea class="form1" row="auto" cols="auto" name="Message" placeholder="Message"></textarea>
      <input type="submit" value="Send">
     </div>
     </form>
     </div>
-  </body>
- </html>
+    <div class="col-5">
+    </div>
+  </div>
+<div class="row">
+ <div class="col-12">
+      <footer id="footer">
+        <a href="https://www.facebook.com/kenyon.westbrook">Facebook</a>
+        <a href="https://github.com/cymun111">GitHub</a>
+        <a href="https://plus.google.com/u/0/111628736488688118379">Google+</a>
+      </footer>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" type="text/javascript"></script>
+</body>
+</html>
