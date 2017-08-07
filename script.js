@@ -13,3 +13,12 @@ document.getElementById("row2").innerHTML = "There are " + sentenceCounter + " s
 document.getElementById("row3").innerHTML = "There are " + spaceCounter + " spaces in this text.";
 document.getElementById("row4").innerHTML = "There are and average of" + " "+ averageWords+" " + "words in each sentence.";
 }
+
+function myNextFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
